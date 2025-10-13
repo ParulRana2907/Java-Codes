@@ -1,1 +1,34 @@
+//Experiment 6
+//q1...part3
+interface X {
+    void methodX();
+}
+interface Y {
+    void methodY();
+}
+interface Z extends X, Y {   // Multiple inheritance of interfaces
+    void methodZ();
+}
+
+class MyClass2 implements Z {
+    public void methodX() {
+        System.out.println("Parul Rana 24csu292");
+        System.out.println("Method from X");
+    }
+    public void methodY() {
+        System.out.println("Method from Y");
+    }
+    public void methodZ() {
+        System.out.println("Method from Z");
+    }
+}
+
+public class TestC {
+    public static void main(String[] args) {
+        MyClass2 obj = new MyClass2();
+        obj.methodX();
+        obj.methodY();
+        obj.methodZ();
+    }
+}
 
