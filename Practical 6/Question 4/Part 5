@@ -1,1 +1,15 @@
+//experiment 6
+//q4..part 5
+public class MainBank {
+    public static void main(String[] args) {
+        System.out.println("Parul Rana 24csu292");
+        Bank a = new BankA();
+        Bank b = new BankB();
+        Bank c = new BankC();
+
+        a.getBalance();
+        b.getBalance();
+        c.getBalance();
+    }
+}
 
