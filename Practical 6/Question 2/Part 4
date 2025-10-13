@@ -1,1 +1,15 @@
+//experiment 6
+//q2..part 4
+public class ResizableCircle extends Circle1 implements Resizable {
+
+    // Constructor with super keyword
+    public ResizableCircle(double radius) {
+        super(radius);
+    }
+
+    @Override
+    public void resize(int percent) {
+        radius = radius * percent / 100.0;
+    }
+}
 
