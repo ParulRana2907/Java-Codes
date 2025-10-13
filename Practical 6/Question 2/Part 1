@@ -1,1 +1,7 @@
+//experiment 6
+//q2..part 1
+public interface GeometricObject {
+    double getPerimeter();
+    double getArea();
+}
 
