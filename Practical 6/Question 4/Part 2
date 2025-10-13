@@ -1,1 +1,8 @@
+//experiment 6
+//q4..part 2
+class BankA extends Bank {
+    void getBalance() {
+        System.out.println("Balance in Bank A: $100");
+    }
+}
 
