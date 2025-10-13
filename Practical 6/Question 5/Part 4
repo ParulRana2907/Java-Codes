@@ -1,1 +1,13 @@
+//experiment 6
+//q5..part 4
+public class MainMarks {
+    public static void main(String[] args) {
+        MarksA studentA = new MarksA(80, 75, 90);
+        MarksB studentB = new MarksB(85, 70, 95, 80);
+
+        System.out.println("Parul Rana 24csu292");
+        System.out.println("Percentage of Student A: " + studentA.getPercentage() + "%");
+        System.out.println("Percentage of Student B: " + studentB.getPercentage() + "%");
+    }
+}
 
