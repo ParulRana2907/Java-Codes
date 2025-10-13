@@ -1,1 +1,6 @@
+//experiment 6
+//q5..part 1
+abstract class Marks {
+    abstract double getPercentage();
+}
 
