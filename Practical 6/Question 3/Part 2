@@ -1,1 +1,19 @@
+//experiment 6
+//q3..part 2
+class Area1 extends Shape1 {
+    @Override
+    void RectangleArea(double length, double breadth) {
+        System.out.println("Rectangle Area: " + (length * breadth));
+    }
+
+    @Override
+    void SquareArea(double side) {
+        System.out.println("Square Area: " + (side * side));
+    }
+
+    @Override
+    void CircleArea(double radius) {
+        System.out.println("Circle Area: " + (Math.PI * radius * radius));
+    }
+}
 
