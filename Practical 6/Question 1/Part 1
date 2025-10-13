@@ -1,1 +1,37 @@
+//experiment 6
+//q1...part1
+// Parent class
+class Animal {
+    void sound() {
+        System.out.println("Parul Rana 24csu292");
+        System.out.println("Animal makes sound");
+    }
+}
+
+// Interfaces
+interface Pet {
+    void play();
+}
+interface Wild {
+    void hunt();
+}
+
+// Child class extends class and implements interfaces
+class Dog extends Animal implements Pet, Wild {
+    public void play() {
+        System.out.println("Dog plays with owner");
+    }
+    public void hunt() {
+        System.out.println("Dog can also hunt");
+    }
+}
+
+public class TestA {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.sound();   // from Animal
+        d.play();    // from Pet
+        d.hunt();    // from Wild
+    }
+}
 
