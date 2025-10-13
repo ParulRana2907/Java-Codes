@@ -1,1 +1,6 @@
+//experiment 6
+//q2..part 2
+public interface Resizable {
+    void resize(int percent);
+}
 
