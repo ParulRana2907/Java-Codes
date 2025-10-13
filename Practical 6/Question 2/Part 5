@@ -1,1 +1,16 @@
+//experiment 6
+//q2..part 5
+public class MainCircle {
+    public static void main(String[] args) {
+        Circle1 c1 = new Circle1(5);
+        System.out.println("Parul Rana 24csu292");
+        System.out.println("Circle Area: " + c1.getArea());
+        System.out.println("Circle Perimeter: " + c1.getPerimeter());
+
+        ResizableCircle rc = new ResizableCircle(10);
+        System.out.println("\nBefore Resize -> Area: " + rc.getArea() + ", Perimeter: " + rc.getPerimeter());
+        rc.resize(50);  // reduce radius to 50%
+        System.out.println("After Resize -> Area: " + rc.getArea() + ", Perimeter: " + rc.getPerimeter());
+    }
+}
 
