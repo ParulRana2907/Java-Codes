@@ -1,1 +1,11 @@
+//experiment 7
+//q2
+import exercises.java.PackageDemo;   // import the class from the package
+
+public class OutsideDemo {
+    public static void main(String[] args) {
+        PackageDemo demo = new PackageDemo();
+        demo.display();
+    }
+}
 
