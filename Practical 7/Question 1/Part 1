@@ -1,1 +1,11 @@
+//experiment 7
+
+package exercises.java;        // package declaration
+
+public class PackageDemo {
+    public void display() {
+        System.out.println("Parul Rana 24CSU292");
+        System.out.println("PackageDemo executed");
+    }
+}
 
