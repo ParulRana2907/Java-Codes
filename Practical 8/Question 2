@@ -1,1 +1,23 @@
+//experiment 8
+//Q2
+// ExceptionExample.java
+// Program to throw and catch an Exception with a String argument...along with fianally block
+
+public class ExceptionExample {
+    public static void main(String[] args) {
+        try {
+            // Throwing an Exception object with a String message
+            throw new Exception("This is an exception message passed to the constructor");
+        } 
+        catch (Exception e) {
+            // Catching the exception and printing the String argument (message)
+            System.out.println("Parul Rana 24CSU292");
+            System.out.println("Caught Exception: " + e.getMessage());
+        } 
+        finally {
+            // Finally block executes whether exception occurs or not
+            System.out.println("Finally block executed — program ended successfully.");
+        }
+    }
+}
 
