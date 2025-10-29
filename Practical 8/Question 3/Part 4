@@ -1,1 +1,10 @@
+//experiment 8
+//Q3....part 4
+// Base class with method that throws LevelOneException
+
+public class A {
+    public void display() throws LevelOneException {
+        throw new LevelOneException("Exception thrown from class A (LevelOneException)");
+    }
+}
 
