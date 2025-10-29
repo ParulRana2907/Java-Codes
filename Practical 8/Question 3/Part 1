@@ -1,1 +1,9 @@
+//experiment 8
+//q3...part 1
+
+public class LevelOneException extends Exception {
+    public LevelOneException(String message) {
+        super(message);
+    }
+}
 
