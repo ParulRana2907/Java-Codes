@@ -1,1 +1,9 @@
+//experiment 8
+//q3...part 3
+
+public class LevelThreeException extends LevelTwoException {
+    public LevelThreeException(String message) {
+        super(message);
+    }
+}
 
