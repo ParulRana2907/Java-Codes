@@ -1,1 +1,28 @@
+//Experiment 8
+//Q3...part 7
+// Main class to demonstrate three-level exception and class hierarchy
+
+public class ExceptionHierarchyDemo {
+    public static void main(String[] args) {
+        // Upcasting: C → A
+        A obj = new C();
+
+        try {
+            obj.display();
+        } 
+        catch (LevelThreeException e) {
+            System.out.println("Parul Rana 24CSU292");
+            System.out.println("Caught LevelThreeException: " + e.getMessage());
+        } 
+        catch (LevelTwoException e) {
+            System.out.println("Caught LevelTwoException: " + e.getMessage());
+        } 
+        catch (LevelOneException e) {
+            System.out.println("Caught LevelOneException: " + e.getMessage());
+        } 
+        finally {
+            System.out.println("Finally block executed — end of program.");
+        }
+    }
+}
 
