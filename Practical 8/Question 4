@@ -1,1 +1,36 @@
+//experiment 8
+//Q4
+
+// Create your own exception class using 'extends'
+class MyCustomException extends Exception {
+    // String reference to store the message
+    private String message;
+
+    // Constructor that accepts a string argument and stores it
+    public MyCustomException(String message) {
+        this.message = message;
+    }
+
+    // 2️⃣ Separate method to print the stored string
+    public void printStoredMessage() {
+        System.out.println("Stored Message: " + message);
+    }
+}
+
+public class CustomExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            // Throwing the custom exception manually
+            throw new MyCustomException("This is a custom exception message!");
+        } 
+        catch (MyCustomException e) {
+            // Catching and calling the method to print the stored string
+            e.printStoredMessage();
+        } 
+        finally {
+            System.out.println("Parul Rana 24CSU292");
+            System.out.println("Finally block executed — program completed.");
+        }
+    }
+}
 
