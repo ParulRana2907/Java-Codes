@@ -1,1 +1,51 @@
+//experiment 8
+//Q1
+import java.util.Scanner;
+
+// DOD 1: Create a user-defined exception
+class CheckArgumentException extends Exception {
+    public CheckArgumentException(String message) {
+        super(message);
+    }
+}
+
+public class CheckArgumentExceptionDemo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        try {
+            // DOD 2: Ask the user to enter the number of arguments
+            System.out.println("Parul Rana 24CSU292");
+            System.out.print("Enter how many integers you want to input: ");
+            int n = sc.nextInt();
+
+            // Check if number of arguments is less than 5
+            if (n < 5) {
+                // Throw user-defined exception
+                throw new CheckArgumentException("You must enter at least 5 integers!");
+            }
+
+            // DOD 3: Use for loop to enter arguments
+            int sum = 0;
+            System.out.println("Enter " + n + " integers:");
+            for (int i = 1; i <= n; i++) {
+                System.out.print("Enter number " + i + ": ");
+                int num = sc.nextInt();
+                sum += num;
+            }
+
+            // DOD 4: Calculate and display sum
+            System.out.println("Sum of the entered numbers = " + sum);
+        } 
+        catch (CheckArgumentException e) {
+            System.out.println("Exception: " + e.getMessage());
+        } 
+        catch (Exception e) {
+            System.out.println("Error: Please enter valid integers.");
+        } 
+        finally {
+            sc.close();
+        }
+    }
+}
 
