@@ -1,1 +1,11 @@
+//experiment 8
+//Q3....part 6
+// Class C inherits from B and throws LevelThreeException
+
+public class C extends B {
+    @Override
+    public void display() throws LevelThreeException {
+        throw new LevelThreeException("Exception thrown from class C (LevelThreeException)");
+    }
+}
 
