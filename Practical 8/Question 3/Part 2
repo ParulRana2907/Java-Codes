@@ -1,1 +1,10 @@
+//experiment 8
+//q3...part 2
+//(inherits from LevelOneException)
+
+public class LevelTwoException extends LevelOneException {
+    public LevelTwoException(String message) {
+        super(message);
+    }
+}
 
