@@ -1,1 +1,11 @@
+//experiment 8
+//Q3...part 5
+// Class B inherits from A and throws LevelTwoException
+
+public class B extends A {
+    @Override
+    public void display() throws LevelTwoException {
+        throw new LevelTwoException("Exception thrown from class B (LevelTwoException)");
+    }
+}
 
